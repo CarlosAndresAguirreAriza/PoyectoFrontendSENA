@@ -1,0 +1,57 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  min-width: 128px;
+  max-width: 130px;
+  height: 37px;
+  min-height: 35px;
+  padding: 8px 10px;
+
+  font-family: var(--Second);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--White);
+
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.button:focus {
+  outline: none;
+}
+
+
+.red{
+  background-color: var(--Red);
+  border: 4px solid var(--Red);
+}
+
+.scarlett{
+  background-color: var(--Scarlett);
+  border: 4px solid var(--Scarlett)
+}
+
+.blue{
+  background-color: var(--Blue);
+  border: 4px solid var(--Blue);
+}
+
+.white{
+  background-color: var(--White);
+  border: 4px solid var(--White);
+  color: var(--Blue);
+}
+
+.grey{
+  background-color: var(--Grey);
+  border: 4px solid var(--Grey);
+}

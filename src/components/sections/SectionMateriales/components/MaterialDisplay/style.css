@@ -1,0 +1,42 @@
+.material-display{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.material-display-title{
+    font-family: var(--Main);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--Blue);
+}
+
+.material-display-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.material-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+
+    height: 100%;
+}
+
+@media (min-width: 320px) {
+    .material-list{
+        gap: 10px;
+    }
+}
+
+@media (min-width: 700px) {
+    .material-display{
+        gap: 40px;
+    }
+}

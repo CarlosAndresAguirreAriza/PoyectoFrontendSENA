@@ -1,0 +1,14 @@
+.swiper-pagination .swiper-pagination-bullet {
+    background-color: var(--Blue);
+    opacity: 1;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--Red);
+}
+
+.swiper-pagination {
+    height: 40px;
+    position: relative;
+    padding-top: 15px;
+}

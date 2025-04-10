@@ -1,0 +1,22 @@
+.formLogin__Conteiner{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+    border-radius: 15px;
+}
+
+.error-text-general{
+    color: red;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.error-text-general-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFD6D6;
+    padding: 10px;
+}

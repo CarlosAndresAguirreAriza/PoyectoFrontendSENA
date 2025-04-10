@@ -1,0 +1,18 @@
+.list-item-desktop{
+    width: 200px;
+
+}
+
+.list-item-desktop_link{
+    height: 40px;
+    display: block;
+    padding-top: 10px;
+    padding-left: 20px;
+    color: var(--Blue);
+    font-family: var(--Second);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}

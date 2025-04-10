@@ -1,0 +1,26 @@
+.renderTextSvg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.renderTextSvg__h5 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 590;
+  line-height: normal;
+  text-align: center;
+  color: #171e53;
+  max-width: 70%;
+}
+@media (min-width: 979px) {
+  .renderTextSvg__h5 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 978px) {
+  .renderTextSvg__h5 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}

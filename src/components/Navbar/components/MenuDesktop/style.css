@@ -1,0 +1,21 @@
+.menu-desktop {
+    display: none;
+}
+
+@media (min-width: 980px) {
+    .menu-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        gap: 54px;
+        width: 100%;
+    }
+
+    .menu-desktop__button {
+        margin-left: auto;
+        display: flex;
+        gap: 18px;
+    }
+}

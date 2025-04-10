@@ -1,0 +1,59 @@
+.list-menu-desktop {
+    position: relative;
+}
+
+.list-menu-desktop__list {
+    position: absolute;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: var(--White);
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease, transform 0.3s ease;
+}
+
+.list-menu-desktop__list--open {
+
+    max-height: 1000px;
+    opacity: 1;
+    padding: 10px;
+    transform: scaleY(1);
+}
+
+.list-menu-desktop__title {
+    color: var(--White);
+    text-decoration: none;
+    transition: color 0.5s ease;
+    font-family: var(--Main);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.list-menu-desktop__link {
+    text-decoration: none;
+}
+
+.list-menu-desktop__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-menu-desktop__title--white {
+    color: var(--Blue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.list-menu-desktop__title--scroll{
+    color: var(--White);;
+}

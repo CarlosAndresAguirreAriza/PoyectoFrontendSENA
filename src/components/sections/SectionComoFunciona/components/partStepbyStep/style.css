@@ -1,0 +1,93 @@
+.como-funciona {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px auto;
+
+}
+
+.como-funciona__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: fit-content;
+}
+
+.como-funciona__step__arrow{
+  display: none;
+}
+
+.como-funciona__step__upload,
+.como-funciona__step__laser,
+.como-funciona__step__empty,
+.como-funciona__step__package {
+  width: 115px;
+  height: 115px;
+  flex-shrink: 0;
+}
+
+.como-funciona__step__empty--price {
+  width: 2.1875rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+}
+
+.como-funciona__step__arrowDown {
+  margin: 45px 0;
+}
+
+.como-funciona__step__empty-content {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.como-funciona__step__empty-price-container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media (min-width: 480px) {
+  .como-funciona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .como-funciona {
+    flex-direction: column;
+  }
+  .como-funciona__step {
+    flex-direction: column;
+  }
+  .como-funciona__step__arrow {
+    display: none;
+  }
+}
+
+@media (min-width: 1250px) {
+  .como-funciona {
+    flex-direction: row;
+    gap: 0rem;
+    align-items: center;
+    justify-content: center;
+    width: 1090px;
+  }
+  .como-funciona__step {
+    flex-direction: row;
+  }
+  .como-funciona__step__arrowDown {
+    display: none;
+  }
+  .como-funciona__step__arrow {
+    display: block;
+  }
+  .como-funciona__step{
+    gap: 0rem;
+  }
+}
+

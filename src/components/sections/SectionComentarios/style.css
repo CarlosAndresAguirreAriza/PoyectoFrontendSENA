@@ -1,0 +1,32 @@
+.comentarios {
+    height: 100%;
+    padding: 0 20px 0 20px;
+}
+
+.comentarios-titulo {
+    color: var(--Blue);
+    font-family: var(--Second);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 26px;
+}
+
+@media (min-width: 700px) {
+    .comentarios-carousel {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .comentarios-titulo {
+        margin-left: 50px;
+        margin-bottom: 78px;
+    }
+}
+
+@media (min-width: 1441px) {
+    .comentarios-carousel {
+        width: 70%;
+    }
+}

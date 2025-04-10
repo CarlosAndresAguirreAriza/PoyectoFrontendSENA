@@ -1,0 +1,31 @@
+.section-imagen-material{
+    background-color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+@media (min-width: 980px){
+    .section-imagen-material{
+        flex-direction: row;
+        gap: 38px;
+        margin: 0 auto;
+        width: 60%;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1440px){
+    .section-imagen-material{
+        flex-direction: row;
+        gap: 38px;
+        margin: 0 auto;
+        width: 60%;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: end;
+    }
+}

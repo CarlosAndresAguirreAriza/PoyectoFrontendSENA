@@ -1,0 +1,49 @@
+.section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.section-title{
+    color: var(--Blue);
+    text-align: center;
+    font-family: var(--Main);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+@media (min-width: 700px) {
+    .section-container{
+        margin-top: 100px;
+    }
+
+
+    .section-title{
+        align-self: flex-start;
+        margin-left: 70px;
+        margin-bottom: 54px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .card-list{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+}

@@ -1,0 +1,212 @@
+@import "../../styles/mixins/grid";
+@import "../../styles/mixins/margenesSeccion";
+@import "../../styles/mixins/htmlElements";
+@import "../../styles/mixins/colors";
+
+.aboutUs {
+    position: relative;
+    &__background {
+        position: relative;
+        &--img {
+            width: 100%;
+            height: auto;
+            @media (max-width: $--Max-Mobile) {
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+
+    &__nav {
+        max-width: $--Max-Desktop-Norm;
+        @include margenesSeccion();
+    }
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+        @media (max-width: $--Max-Tablet) {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 2), rgba(0, 0, 0, 0));
+        }
+    }
+
+    &__contenidoSuperior {
+        z-index: 3;
+        max-width: $--Max-Desktop-Norm;
+        @media (min-width: $--Min-Tablet) {
+            @include gridContainer(12);
+        }
+        @media (max-width: $--Max-Mobile) {
+            @include gridContainer(4);
+            top: 5%;
+            transform: translateY(-50%);
+        }
+
+        @media (max-width: $--Max-Tablet) {
+            top: 12%;
+            transform: translateY(-50%);
+            left: 4%;
+        }
+
+        position: absolute;
+        top: 20%;
+        transform: translateY(-50%);
+        left: 12%;
+        text-align: left;
+        z-index: 1;
+        color: black;
+        text-align: left;
+
+        &--h1 {
+            @include mainH1($--White);
+            margin-bottom: -0.2rem;
+            grid-column: 1/5;
+            border-bottom: 4px solid $--Red;
+            @media (max-width: $--Max-Tablet) {
+                grid-column: 1/7;
+            }
+            @media (max-width: $--Max-Mobile) {
+                grid-column: 1/5;
+            }
+        }
+        &--p {
+            margin-top: 1.25rem;
+            @include mainP($--White);
+            grid-column: 1/8;
+            @media (max-width: $--Max-Tablet) {
+                grid-column: 1/12;
+            }
+            @media (max-width: $--Max-Mobile) {
+                grid-column: 1/5;
+            }
+        }
+    }
+
+    &--intermedio {
+        @include margenesSeccion();
+        @include margenTopSeccion();
+        grid-column: 1/13;
+        max-width: $--Max-Desktop-Norm;
+        @media (min-width: $--Min-Tablet) {
+            @include gridContainer(12);
+        }
+        @media (max-width: $--Max-Mobile) {
+            grid-column: 1/5;
+            @include gridContainer(4);
+        }
+        &__izq {
+            grid-column: 7/13;
+            justify-self: start;
+            @media (max-width: $--Max-Tablet) {
+                grid-column: 1/13;
+                justify-self: center;
+            }
+            @media (max-width: $--Max-Mobile) {
+                grid-column: 1/5;
+            }
+        }
+
+        &__der {
+            grid-column: 1/6;
+            text-align: left;
+            align-items: center;
+            @media (max-width: $--Max-Tablet) {
+                text-align: center;
+                grid-column: 1/13;
+                justify-self: center;
+            }
+            @media (min-width: $--Min-Desktop-Norm) {
+                @include gridContainer(6);
+            }
+            @media (max-width: $--Max-Mobile) {
+                grid-column: 1/5;
+                @include gridContainer(4);
+            }
+            @media (max-width: $--Max-Tablet) {
+                @include gridContainer(12);
+            }
+
+            margin: 0;
+            &--h1 {
+                grid-column: 1/7;
+
+                border-bottom: 4px solid $--Red;
+                padding: 0;
+                margin: 0;
+                @include mainH1($--Blue);
+
+                @media (max-width: $--Max-Tablet) {
+                    text-align: left;
+
+                    grid-column: 2/12;
+                }
+                @media (max-width: $--Max-Mobile) {
+                    text-align: left;
+                }
+            }
+            &--p {
+                @include mainP($--Blue);
+                grid-column: 1/7;
+                padding: 0;
+
+                @media (max-width: $--Max-Tablet) {
+                    text-align: left;
+
+                    grid-column: 2/12;
+                }
+                @media (max-width: $--Max-Mobile) {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    &--inferior {
+        @include margenesSeccion();
+        @include margenTopSeccion();
+        grid-column: 1/13;
+        max-width: $--Max-Desktop-Norm;
+        @media (min-width: $--Min-Tablet) {
+            @include gridContainer(12);
+        }
+        @media (max-width: $--Max-Mobile) {
+            grid-column: 1/5;
+        }
+
+        &__izq {
+            grid-column: 2/5;
+            @media (max-width: $--Max-Tablet) {
+                grid-column: 3/11;
+            }
+            @media (max-width: $--Max-Mobile) {
+                grid-column: 1/5;
+            }
+            justify-self: start;
+            &--h1 {
+                @include mainH1($--Blue);
+            }
+            &--p {
+                @include mainP($--Blue);
+            }
+        }
+        &__der {
+            grid-column: 8/12;
+            @media (max-width: $--Max-Mobile) {
+                grid-column: 1/5;
+            }
+            justify-self: start;
+            @media (max-width: $--Max-Tablet) {
+                grid-column: 3/11;
+            }
+            &--h1 {
+                @include mainH1($--Blue);
+            }
+            &--p {
+                @include mainP($--Blue);
+            }
+        }
+    }
+}

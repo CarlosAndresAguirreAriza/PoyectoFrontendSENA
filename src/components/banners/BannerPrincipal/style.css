@@ -1,0 +1,148 @@
+.bannerPrincipal__home {
+  background-image: url("https://res.cloudinary.com/da4ulrywk/image/upload/f_auto,q_auto/v1/Pricut/udi1pyl2oiv7mfj0cdcv");
+  position: relative;
+  background-position: -450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 835px;
+  overflow: hidden;
+}
+
+.bannerPrincipal__content {
+  font-family: 'Roboto', sans-serif;
+  margin: 105px 20px 0 20px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 14px;
+}
+
+.bannerPrincipal__content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  color: var(--White);
+}
+
+.bannerPrincipal__content h5 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 40px;
+  color: var(--White);
+  max-width: 400px;
+}
+
+.bannerPrincipal__content span {
+  color: var(--Red);
+}
+
+.bannerPrincipal__content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--White);
+  max-width: 400px;
+}
+
+.bannerPrincipal__background {
+  position: absolute;
+  background: linear-gradient(122.33deg, #171E53 30%, rgba(23, 30, 83, 0) 100%);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.svg {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+@media (min-width: 480px){
+  .bannerPrincipal__content {
+    margin: 205px 20px 0 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  .bannerPrincipal__home {
+    background-position: center;
+    height: 509px;
+    width: 100%;
+  }
+
+  .bannerPrincipal__content {
+    margin: 100px 0 0 60px;
+    width: auto;
+  }
+
+  .bannerPrincipal__content h5 {
+    max-width: 100%;
+  }
+
+  .bannerPrincipal__content p {
+    max-width: 500px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+@media (min-width: 980px) {
+  .bannerPrincipal__background {
+    display: none;
+  }
+
+  .bannerPrincipal__background-1 {
+    opacity: 1;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="853" height="693" viewBox="0 0 853 693" fill="none"%3E%3Cg filter="url(%23filter0_b_260_296)"%3E%3Cpath d="M-2 0H852.958L668.422 693H-2V0Z" fill="%23171E53" fill-opacity="0.6"/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id="filter0_b_260_296" x="-4" y="-2" width="858.958" height="697" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"%3E%3CfeFlood flood-opacity="0" result="BackgroundImageFix"/%3E%3CfeGaussianBlur in="BackgroundImageFix" stdDeviation="1"/%3E%3CfeComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_260_296"/%3E%3CfeBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_260_296" result="shape"/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .bannerPrincipal__background-2 {
+    opacity: 1;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="822" height="693" viewBox="0 0 822 693" fill="none"%3E%3Cg filter="url(%23filter0_b_260_295)"%3E%3Cpath d="M-2 0H619.149L821.851 693H-2V0Z" fill="%23171E53" fill-opacity="0.6"/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id="filter0_b_260_295" x="-6" y="-4" width="831.851" height="701" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"%3E%3CfeFlood flood-opacity="0" result="BackgroundImageFix"/%3E%3CfeGaussianBlur in="BackgroundImageFix" stdDeviation="2"/%3E%3CfeComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_260_295"/%3E%3CfeBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_260_295" result="shape"/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .bannerPrincipal__background-3 {
+    opacity: 1;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="859" height="693" viewBox="0 0 859 693" fill="none"%3E%3Cg filter="url(%23filter0_b_260_294)"%3E%3Cpath d="M-2 0L656.278 0L858.979 693H-2V0Z" fill="%23171E53" fill-opacity="0.4"/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id="filter0_b_260_294" x="-6" y="-4" width="868.979" height="701" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"%3E%3CfeFlood flood-opacity="0" result="BackgroundImageFix"/%3E%3CfeGaussianBlur in="BackgroundImageFix" stdDeviation="2"/%3E%3CfeComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_260_294"/%3E%3CfeBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_260_294" result="shape"/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .bannerPrincipal__content{
+    margin: 0 0 0 60px;
+    width: 676px;
+  }
+  .bannerPrincipal__home{
+    padding: 200px 0;
+    height: auto;
+  }
+}

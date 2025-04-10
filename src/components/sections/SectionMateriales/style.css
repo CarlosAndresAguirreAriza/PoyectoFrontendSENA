@@ -1,0 +1,32 @@
+.section-materiales {
+    position: relative;
+}
+
+.section-materiales-contain{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.section-materiales-title {
+    color: var(--Blue);
+    font-family: var(--Second);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.section-materiales-list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    height: 100%;
+}
+
+@media (min-width: 700px) {
+    .section-materiales{
+        margin-left: 70px;
+    }
+}

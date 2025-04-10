@@ -1,0 +1,41 @@
+.diferenciadores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+@media (min-width: 420px) {
+    .diferenciadores{
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 700px) {
+    .diferenciadores{
+        max-width: 656px;
+        margin: 20px auto;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1440px){
+    .diferenciadores{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}

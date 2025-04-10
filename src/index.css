@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Variables de colores */
+:root {
+    --Red: #e30613;
+    --White: #fff;
+    --Blue: #171e53;
+    --Grey: #e8e8e8;
+    --Dark-Grey: #3F3F3F;
+    --Scarlett: #B6000B;
+    --Blackish-Green: #121;
+
+    /* Variables de fuentes */
+    --Main: "Roboto", sans-serif;
+    --Second: "San Francisco", sans-serif;
+    --Third: "Inter", sans-serif;
+    --Fourth: "Segoe UI", sans-serif;
+
+    /* Breakpoints */
+    --Max-Mobile: 480px;
+    --Min-Tablet: 481px;
+    --Max-Tablet: 978px;
+    --Min-Desktop-Norm: 979px;
+    --Max-Desktop-Norm: 1440px;
+    --Min-Desktop-Big: 1441px;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    column-gap: 1rem;
+}
+
+@media (min-width: var(--Min-Desktop-Norm)) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+    }
+}
+
+@media (max-width: var(--Max-Tablet)) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(0.5fr, 0.5fr));
+        column-gap: 0.5rem;
+    }
+}
+
+@media (max-width: var(--Max-Mobile)) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+        column-gap: 0.25rem;
+    }
+}
+
+/* Botones */
+.only-border-button {
+    background: transparent;
+    border: 0.19rem solid var(--Red);
+    color: var(--Red);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.94rem 1.25rem;
+    font-size: 1rem;
+    transition: background-color 0.25s;
+}
+
+.only-border-button:hover {
+    background-color: var(--Red);
+    cursor: pointer;
+}
+
+/* Ejemplo de mixin convertido */
+.main-font {
+    font-family: var(--Main);
+    color: var(--Dark-Grey);
+}
+
+.main-h1 {
+    font-family: var(--Main);
+    color: var(--Red);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.main-h2 {
+    font-family: var(--Main);
+    color: var(--Blue);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+/* Media queries para iconos */
+.icon-description-h5 {
+    font-family: var(--Main);
+    font-weight: 590;
+    text-align: center;
+    color: var(--Dark-Grey);
+}
+
+@media (min-width: var(--Min-Desktop-Norm)) {
+    .icon-description-h5 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: var(--Max-Tablet)) {
+    .icon-description-h5 {
+        font-size: 1.125rem;
+    }
+}
+
+/* Margenes */
+.margenes-seccion {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+@media (max-width: var(--Max-Mobile)) {
+    .margenes-seccion {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.margen-top-seccion {
+    margin-top: 6rem;
+}
+
+@media (max-width: var(--Max-Mobile)) {
+    .margen-top-seccion {
+        margin-top: 1rem;
+    }
+}
+
+/* Imagen de fondo */
+.cover-background-image {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -5;
+}

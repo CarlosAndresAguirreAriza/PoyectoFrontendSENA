@@ -1,0 +1,16 @@
+.login__title{
+    font-weight: 700;
+    font-family: var(----Second);
+    font-size: 48px;
+    font-style: normal;
+}
+
+.login__subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    color:var(--Dark-Grey);
+}
+
+.login__text__conteiner{
+    margin-bottom: 24px;
+}

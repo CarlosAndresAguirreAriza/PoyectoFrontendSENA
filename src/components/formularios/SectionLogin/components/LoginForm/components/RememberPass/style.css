@@ -1,0 +1,21 @@
+.rememberPass__conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    gap: 12px;
+    margin-top: -28px;
+}
+
+.rememberPass__forgetPass{
+    color: red;
+    text-decoration-line: none;
+}
+
+.rememberPass__forgetPass:hover{
+    text-decoration-line: underline;
+}
+
+.rememberPass__forgetPass:active{
+    color: blueviolet;;
+}

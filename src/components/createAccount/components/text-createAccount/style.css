@@ -1,0 +1,28 @@
+.createAcc__titles__conteiner{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 185px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.createAcc__title{    
+    font-weight: 700;
+    font-family: "inter";
+    font-size: 48px;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.createAcc__subtitle{
+    margin-left: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    color:rgb(44, 43, 43);
+    text-align: center;
+}

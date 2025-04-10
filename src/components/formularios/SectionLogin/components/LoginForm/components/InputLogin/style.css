@@ -1,0 +1,72 @@
+.formLogin__cont {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.formLogin__inputWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.formLogin__input {
+    width: 100%;
+    padding-right: 30px;
+    height: 45px;
+    padding: 0 4px 0 10px;
+    box-sizing: border-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+}
+
+.formLogin__icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formLogin__label{
+    position: absolute;
+    top: -20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: var(--Second);
+}
+
+.formLogin__icon__eye{
+    height: 18px;
+}
+
+.input-error{
+    border: 1px solid red;
+    background-color: #FFD6D6;
+}
+
+.error-text{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    font-family: var(--Second);
+    letter-spacing: 0.5px;
+    line-height: 23px;
+}
+
+.formLogin__iconError{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-error_form{
+    right: 42px;
+}

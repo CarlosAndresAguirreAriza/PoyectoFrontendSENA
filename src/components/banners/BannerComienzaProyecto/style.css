@@ -1,0 +1,102 @@
+.bannerComienza {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--Blue);
+    padding: 78px 20px;
+    z-index: 1;
+}
+
+.bannerComienza__h2 {
+    color: var(--White);
+    text-align: center;
+    font-family: var(--Main);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+}
+
+.bannerComienza__p {
+    color: var(--White);
+    text-align: center;
+    font-family: var(--Main);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+}
+
+.bannerComienza__p--span {
+    color: var(--Red);
+}
+
+.bannerComienza__botonera {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.bannerComienza__background {
+    position: absolute;
+    background: linear-gradient(94deg, #171E53 0%, rgba(23, 30, 83, 0.90) 78.65%, rgba(23, 30, 83, 0.00) 100%);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+@media (min-width: 321px) {
+    .bannerComienza__p-container{
+        width: 80%;
+        margin: 20px 0;
+    }
+
+
+    .bannerComienza {
+        background-image: url("https://res.cloudinary.com/da4ulrywk/image/upload/f_auto,q_auto/v1/Pricut/udi1pyl2oiv7mfj0cdcv");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 700px) {
+    .bannerComienza__p{
+        width: 100%;
+    }
+
+    .bannerComienza__botonera{
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 978px) {
+    .bannerComienza__p-container{
+        width: 770px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bannerComienza__p{
+
+    }
+
+    .bannerComienza__p-container{
+        width: 60%;
+    }
+
+    .bannerComienza__p{
+        text-align: center;
+    }
+}

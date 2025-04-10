@@ -1,0 +1,118 @@
+.card-articulo {
+    display: flex;
+    flex-direction: column;
+    max-width: 388px;
+    max-height: 314px;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 24px;
+    background: #F7F6F6;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 34px 40px;
+}
+
+.card-articulo-title{
+    color: var(--Blackish-Green);
+    font-family: var(--Main);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-articulo-resumen{
+    overflow: hidden;
+    color: var(--Blackish-Green);
+    font-family: var(--Main);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+}
+
+.card-articulo-resumen-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+@media (min-width: 321px) {
+    .card-comment {
+        max-height: 314px;
+        max-width: 388px;
+    }
+
+    .card-articulo-title {
+        font-size: 24px;
+    }
+
+    .card-articulo-resumen {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 479px) {
+    .card-comment {
+        width: 388px;
+        height: 314px;
+        justify-content: space-between;
+        align-self: center;
+        padding: 20px;
+    }
+
+    .card-articulo-title {
+        font-size: 36px;
+    }
+
+    .card-articulo-resumen {
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 700px) {
+
+    .card-articulo-title {
+        font-size: 26px;
+    }
+
+    .card-articulo-resumen {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .card-articulo-title {
+        font-size: 36px;
+    }
+
+    .card-articulo-resumen {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1441px) {
+    .card-articulo-title {
+        font-size: 26px;
+    }
+
+    .card-articulo-resumen {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1846px) {
+    .card-articulo-title {
+        font-size: 36px;
+    }
+
+    .card-articulo-resumen {
+        font-size: 16px;
+    }
+}

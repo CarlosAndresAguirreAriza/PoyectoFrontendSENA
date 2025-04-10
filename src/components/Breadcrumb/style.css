@@ -1,0 +1,92 @@
+.migasDePan {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.paso {
+    display: flex;
+    align-items: center;
+}
+
+.numero-completo,
+.numero-incompleto {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #FFF;
+}
+
+.numero-completo {
+    border: 2px solid #171E53;
+}
+
+.numero-incompleto {
+    border: 0.8px solid rgba(0, 0, 0, 0.10);
+}
+
+
+.incompleto {
+    display: none;
+}
+
+.completo-check {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #171E53;
+    background-image: url('https://res.cloudinary.com/da4ulrywk/image/upload/f_auto,q_auto/v1/Pricut/zli0p8gdcvqzj56smpno');
+    background-size: 24px 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: crecer 0.5s ease-out;
+}
+
+.siguiente {
+    border-radius: 16px;
+    border: 2px solid #171E53;
+    background: #FFF;
+}
+
+.siguiente p {
+    color: #171E53;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.linea-completo {
+    width: 135px;
+    height: 5px;
+    flex-shrink: 0;
+    border-radius: 1px;
+    background: #171E53;
+    transition: width 1s ease-in-out, background 0.5s ease-in-out;
+}
+
+.linea-incompleto {
+    width: 135px;
+    height: 5px;
+    flex-shrink: 0;
+    border-radius: 1px;
+    border: 3px solid #E6E6E6;
+    background: rgba(0, 0, 0, 0.00);
+    transition: width 1s ease-in-out, background 0.5s ease-in-out;
+}
+
+@keyframes crecer {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

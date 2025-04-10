@@ -1,0 +1,44 @@
+.specificMaterial {
+    background-color: var(--Blue);
+}
+
+.specificMaterial-Table{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--White);
+}
+
+@media (min-width: 980px) {
+    .specificMaterial {
+        background-color: var(--White);
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .specificMaterial-Section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .about-container {
+        width: 60%;
+    }
+}
+
+
+@media (min-width: 1680px) {
+    .about-container {
+        width: 90%;
+    }
+}

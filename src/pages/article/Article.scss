@@ -1,0 +1,40 @@
+@import "../../styles/mixins/grid";
+@import "../../styles/mixins/margenesSeccion";
+@import "../../styles/mixins/responsive";
+@import "../../styles/mixins/images";
+@import "../../styles/mixins/htmlElements";
+@import "../../styles/mixins/colors";
+
+.article {
+  @include margenesSeccion();
+  max-width: $--Max-Desktop-Norm;
+  @media (min-width: $--Min-Tablet) {
+    @include gridContainer(12);
+  }
+  @media (max-width: $--Max-Mobile) {
+    @include gridContainer(4);
+  }
+  &__image {
+    grid-column: 1/13;
+    width: 100%;
+
+    height: 650px;
+    display: block;
+    @media (max-width: $--Max-Mobile) {
+      grid-column: 1/5;
+      margin-top: 4rem;
+      height: auto;
+    }
+  }
+
+  &__contenido {
+    grid-column: 2/12;
+    background-color: white;
+    margin-top: -12rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    @media (max-width: $--Max-Mobile) {
+      grid-column: 1/5;
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.porqueSomos {
+    width: auto;
+    height: auto;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="480" height="1200" viewBox="0 0 480 1200" fill="none"%3E%3Cpath d="M340.5 999.5V800.5H539.5V999.5H340.5ZM539.5 600.5V799.5H340.5L340.5 600.5H539.5ZM539.5 599.5H340.5V400.5H539.5V599.5ZM339.5 400.5V599.5H140.5L140.5 400.5H339.5ZM539.5 399.5H340.5V200.5H539.5L539.5 399.5ZM339.5 200.5V399.5H140.5V200.5H339.5ZM539.5 199.5H340.5V0.5H539.5V199.5ZM539.5 1000.5V1199.5H340.5V1000.5H539.5ZM139.5 1199.5H-59.5L-59.5 1000.5H139.5V1199.5ZM139.5 999.5H-59.5L-59.5 800.5H139.5L139.5 999.5ZM139.5 799.5H-59.5L-59.5 600.5H139.5V799.5ZM139.5 599.5H-59.5L-59.5 400.5H139.5L139.5 599.5ZM139.5 399.5H-59.5L-59.5 200.5H139.5V399.5ZM139.5 199.5H-59.5L-59.5 0.5H139.5L139.5 199.5ZM140.5 0.5H339.5V199.5H140.5L140.5 0.5ZM140.5 600.5H339.5L339.5 799.5H140.5V600.5ZM140.5 999.5L140.5 800.5H339.5V999.5H140.5ZM140.5 1000.5H339.5V1199.5H140.5V1000.5Z" stroke="url(%23paint0_radial_500_787)"/%3E%3Cdefs%3E%3CradialGradient id="paint0_radial_500_787" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(240 600) scale(300 600)"%3E%3Cstop stop-color="%23A0A0A0" stop-opacity="0.5"/%3E%3Cstop offset="1" stop-color="%23A0A0A0" stop-opacity="0"/%3E%3C/radialGradient%3E%3C/defs%3E%3C/svg%3E');
+    background-position: center;
+    background-size: unset;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 700px) {
+    .porqueSomos {
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="978" height="600" viewBox="0 0 978 600" fill="none"%3E%3Cpath d="M89.5 400.5H288.5V599.5H89.5V400.5ZM488.5 599.5H289.5V400.5H488.5V599.5ZM489.5 599.5V400.5H688.5V599.5H489.5ZM688.5 399.5H489.5V200.5H688.5V399.5ZM689.5 599.5V400.5H888.5V599.5H689.5ZM888.5 399.5H689.5V200.5H888.5V399.5ZM889.5 599.5V400.5H1088.5V599.5H889.5ZM88.5 599.5H-110.5V400.5H88.5V599.5ZM-110.5 199.5V0.5H88.5V199.5H-110.5ZM89.5 199.5V0.5H288.5V199.5H89.5ZM289.5 199.5V0.5H488.5V199.5H289.5ZM489.5 199.5V0.5H688.5V199.5H489.5ZM689.5 199.5V0.5H888.5V199.5H689.5ZM889.5 199.5V0.5H1088.5V199.5H889.5ZM1088.5 200.5V399.5H889.5V200.5H1088.5ZM488.5 200.5V399.5H289.5V200.5H488.5ZM89.5 200.5H288.5V399.5H89.5V200.5ZM88.5 200.5V399.5H-110.5V200.5H88.5Z" stroke="url(%23paint0_radial_475_998)"/%3E%3Cdefs%3E%3CradialGradient id="paint0_radial_475_998" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(489 300) rotate(90) scale(300 600)"%3E%3Cstop stop-color="%23171E53" stop-opacity="0.28"/%3E%3Cstop offset="1" stop-color="%23171E53" stop-opacity="0"/%3E%3C/radialGradient%3E%3C/defs%3E%3C/svg%3E');
+        background-size: contain;
+    }
+}
+
+@media (min-width: 1400px){
+    .porqueSomos{
+        display: flex;
+        width: auto;
+        height: auto;
+        gap: 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1500px){
+    .porqueSomos{
+        width: 75%;
+
+    }
+}

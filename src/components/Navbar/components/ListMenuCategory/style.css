@@ -1,0 +1,43 @@
+.list-item-menu {
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--Dark-Grey);
+    margin: 20px 0;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--Light-Grey);
+    text-decoration: none;
+    color: var(--Dark-Grey);
+    width: 100%;
+    height: 68px;
+}
+
+.list-item-title {
+    font-size: var(--Main);
+    font-weight: 600;
+}
+
+.menu-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+
+.menu-content.open {
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.menu_despegable_lista-pintado{
+    background-color: var(--Blue);
+}
+
+.list-item-dif-text{
+    color: var(--White);
+}

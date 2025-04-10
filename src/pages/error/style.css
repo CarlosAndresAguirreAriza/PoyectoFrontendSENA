@@ -1,0 +1,62 @@
+.error-page{
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error-header{
+    color: var(--Blue);
+    text-align: center;
+    font-family: var(--Second);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-align: center;
+}
+
+.error-code{
+    color: var(--Red);
+    text-align: center;
+    font-family: var(--Second);
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-align: center;
+}
+
+.error-message{
+    color: var(--Blue);
+    text-align: center;
+    font-family: var(--Second);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.error-actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px){
+    .error-header{
+        font-size: 60px;
+    }
+
+    .error-code{
+        font-size: 150px;
+    }
+
+    .error-message{
+        max-width: 640px;
+    }
+}

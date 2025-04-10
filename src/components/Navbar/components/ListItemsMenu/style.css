@@ -1,0 +1,14 @@
+.list-item-link-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--Light-Grey);
+}
+
+.list-item-link{
+    font-size: var(--Main);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--Blue);
+}

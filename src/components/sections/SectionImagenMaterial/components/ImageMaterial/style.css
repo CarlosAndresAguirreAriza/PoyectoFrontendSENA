@@ -1,0 +1,10 @@
+.imageMaterial {
+    width: 280px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    overflow: hidden;
+    background-size: 150%;
+    background-position: top left;
+    background-repeat: no-repeat;
+}

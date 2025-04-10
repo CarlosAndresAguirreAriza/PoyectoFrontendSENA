@@ -1,0 +1,119 @@
+.card-comment {
+    display: flex;
+    flex-direction: column;
+    max-width: 388px;
+    max-height: 314px;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 24px;
+    background: #F7F6F6;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card-comment-comment {
+    color: var(--Blue);
+    font-family: var(--Second);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 20px 10px;
+    text-align: left;
+}
+
+.card-footer-comment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card-name-comment, .card-profession-comment {
+    text-align: left;
+    margin: 0;
+    width: 50%;
+}
+
+.card-name-comment{
+    color: #5D5A88;
+    font-family: var(--Second);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.card-profession-comment{
+    color: #8D8BA7;
+    font-family: var(--Second);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px
+}
+
+@media (min-width: 321px) {
+    .card-comment {
+        max-height: 314px;
+        max-width: 388px;
+    }
+
+    .card-comment-comment {
+        font-size: 20px;
+    }
+
+    .card-name-comment {
+        font-size: 16px;
+    }
+
+    .card-profession-comment {
+        font-size: 12px;
+    }
+
+}
+
+@media (min-width: 479px) {
+    .card-comment {
+        width: 388px;
+        height: 314px;
+        justify-content: space-between;
+        align-self: center;
+        padding: 20px;
+    }
+
+    .card-comment-comment {
+        font-size: 24px;
+    }
+
+    .card-name-comment {
+        font-size: 18px;
+    }
+
+    .card-profession-comment {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 700px){
+    .card-comment {
+        width: 100%;
+        height: 314px;
+        justify-content: space-between;
+        align-self: center;
+        padding: 20px;
+    }
+
+    .card-comment-comment {
+        font-size: 24px;
+    }
+
+    .card-name-comment {
+        font-size: 18px;
+    }
+
+    .card-profession-comment {
+        font-size: 14px;
+    }
+}
+
+
