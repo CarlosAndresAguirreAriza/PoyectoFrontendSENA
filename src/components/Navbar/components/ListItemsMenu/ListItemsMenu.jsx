@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom'
 const ListItemsMenu = ({ code, tipoMaterial, openNavBar, setOpenNavBar, url }) => {
     return (
         <div className="list-item-link-container">
-            <Link to={`/${url}/${code}`} onClick={() => setOpenNavBar(!openNavBar)} className="list-item-link">
+            <Link to={`${url}/${code}`} onClick={() => setOpenNavBar(!openNavBar)} className="list-item-link">
                 {tipoMaterial}
             </Link>
         </div>

@@ -1,5 +1,3 @@
-
-
 /**
  * Componente `RenderSvg`.
  *

@@ -6,6 +6,15 @@ export default defineConfig({
   server: {
     port: 3000
   },
+  preview: {
+    host: '0.0.0.0',
+    port: 8080,
+    strictPort: true,
+    allowedHosts: [
+      process.env.ALLOWED_HOST,
+      '.railway.app'
+    ]
+  },
   esbuild: {
     loader: 'jsx',
     include: /src\/.*\.jsx?$/,

@@ -73,7 +73,7 @@ const AppRouterContent = () => {
 
         <Route element={<ProtectedRoute redirectTo="/" />}>
           <Route path="/login" element={<Login />} />
-          <Route path="/CreateAccount" element={<CreateAccount />} />
+          <Route path="/create_account" element={<CreateAccount />} />
         </Route>
 
         <Route path="*" element={<Navigate to="/error" />} />

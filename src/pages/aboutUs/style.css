@@ -1,0 +1,13 @@
+.App {
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(115, 115, 115, 0.23) 100%);
+}
+
+@media (min-width: 1024px) {
+  .App {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='600' viewBox='0 0 1200 600' fill='none'%3E%3Cpath d='M1199.5 400.5V599.5H1000.5V400.5H1199.5ZM999.5 400.5V599.5H800.5V400.5H999.5ZM799.5 400.5V599.5H600.5V400.5H799.5ZM599.5 400.5V599.5H400.5V400.5H599.5ZM399.5 400.5V599.5H200.5V400.5H399.5ZM199.5 400.5V599.5H0.5V400.5H199.5ZM1199.5 200.5V399.5H1000.5V200.5H1199.5ZM999.5 200.5V399.5H800.5V200.5H999.5ZM799.5 200.5V399.5H600.5V200.5H799.5ZM599.5 200.5V399.5H400.5V200.5H599.5ZM399.5 200.5V399.5H200.5V200.5H399.5ZM199.5 200.5V399.5H0.5V200.5H199.5ZM1199.5 0.5V199.5H1000.5V0.5H1199.5ZM999.5 0.5V199.5H800.5V0.5H999.5ZM799.5 0.5V199.5H600.5V0.5H799.5ZM599.5 0.5V199.5H400.5V0.5H599.5ZM399.5 0.5V199.5H200.5V0.5H399.5ZM199.5 0.5V199.5H0.5V0.5H199.5Z' stroke='url(%23paint0_radial_3729_4620)'/%3E%3Cdefs%3E%3CradialGradient id='paint0_radial_3729_4620' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(600 300) rotate(90) scale(300 600)'%3E%3Cstop stop-color='%23171E53' stop-opacity='0.1'/%3E%3Cstop offset='1' stop-color='%23171E53' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+  }
+}

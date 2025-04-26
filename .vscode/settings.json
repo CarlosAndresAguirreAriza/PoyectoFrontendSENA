@@ -1,12 +1,22 @@
 {
-  "eslint.execArgv": null,
-  "eslint.nodeEnv": null,
+  // FORMATEO AUTOMÁTICO USANDO ESLINT
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
     "source.fixAll.eslint": "explicit"
   },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+
+  // ESLINT
   "eslint.validate": [
-    "javascript"
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
   ],
+  "eslint.experimental.useFlatConfig": true,
+
+  // CORRECTOR ORTOGRÁFICO
   "cSpell.words": [
     "about",
     "Aldan",
@@ -60,7 +70,5 @@
     "Visisble",
     "zustand"
   ],
-  "cSpell.ignoreWords": [
-    "profession"
-  ]
+  "cSpell.ignoreWords": ["profession"]
 }

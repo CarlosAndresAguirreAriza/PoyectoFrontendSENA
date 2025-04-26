@@ -1,57 +1,73 @@
-.conteinerLogin{
+.container-login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  padding: 185px 20px 0 20px;
+  width: 100%;
+}
+
+.container-login__components {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 1rem;
+}
+
+.container-login__image {
+  display: none;
+}
+
+.container-login__components__text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.text-shared{
+  font-size: 14px;
+  font-family: var(--Second);
+}
+
+.link-create,
+.link-recover{
+  font-size: 14px;
+  font-family: var(--Second);
+  color: var(--Red);
+  text-decoration: none;
+}
+
+
+
+@media (min-width: 600px) and (max-width: 1109px) {
+  .container-login {
+    max-width: 512px;
+  }
+}
+
+@media (min-width: 1110px) {
+  .container-login__image {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     justify-items: center;
-    gap: 44px;
-    
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 185px;
-    padding-left: 31px;
-    padding-right: 28px;
-
-    width: 100%;
+    width: 50%;
   }
-  .conteinerLogin__components{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+
+  .container-login__components {
+    padding: 2rem;
+    max-width: 556px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .conteinerLogin__image{
-    display: none;
+  .container-login {
+    justify-content: space-between;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
   }
-  
-    @media (min-width: 600px) and (max-width: 1109px) {
-    .conteinerLogin{
-      max-width: 512px;
-  }
-  }
-    
-  @media (min-width: 1110px) {
-    .conteinerLogin__image{
-      display: flex;
-      align-items: center;
-      justify-items: center;
-      padding: 1rem;
-      width: 50%;
-    }
-    .conteinerLogin__components{      
-      padding: 2rem ;
-      max-width: 556px;
-      margin-left: auto;
-      margin-right: auto;  
-    }
-    .conteinerLogin{
-      justify-content: space-between;
-      max-width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-      flex-direction: row;
-    }
-
-  }
+}

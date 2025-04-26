@@ -6,14 +6,12 @@ import './style.css'
 
 const Login = () => {
     return (
-        <>
-            <div className='login__page'>
-                <Navbar white={false} scrolledOff={true}/>
-                <SectionLogin/>
-                <SectionNuestrosServicios />
-                <Footer/>
-            </div>
-        </>
+    <div className='login__page'>
+        <Navbar white={false} scrolledOff={true}/>
+        <SectionLogin/>
+        <SectionNuestrosServicios />
+        <Footer/>
+    </div>
     )
 }
 

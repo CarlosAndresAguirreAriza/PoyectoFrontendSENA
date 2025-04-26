@@ -31,7 +31,7 @@ const Card = ({ titulo, desc, servicio, imgSrc }) => {
                 <div>
                     <h3 className="card-title">{titulo}</h3>
                     <div className='card-text'>
-                        <p className="card-description">{desc && desc.length > 200 ? desc.slice(0, 200) + '...' : desc}</p>
+                        <p className="card-description">{desc && desc.length > 100 ? desc.slice(0, 100) + '...' : desc}</p>
                     </div>
                 </div>
                 <Link to={'/service/' + servicio} className="card-link">Leer más</Link>

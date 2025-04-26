@@ -1,4 +1,4 @@
-.formLogin__Conteiner{
+.form-login-container {
     margin-top: 35px;
     display: flex;
     flex-direction: column;
@@ -7,16 +7,16 @@
     border-radius: 15px;
 }
 
-.error-text-general{
+.error-text-general {
     color: red;
     font-size: 20px;
     margin-top: 5px;
 }
 
-.error-text-general-container{
+.error-text-general-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFD6D6;
+    background-color: #ffd6d6;
     padding: 10px;
 }

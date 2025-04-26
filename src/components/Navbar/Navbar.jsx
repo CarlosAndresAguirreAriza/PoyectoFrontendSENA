@@ -53,16 +53,16 @@ const Navbar = ({ white = true, scrolledOff = false }) => {
       {white ? (
         scrolled ? (
           <Link to="/" className="navbar_logo">
-            <img src="/assets/home/logo/pricut-logo-SF-claro-3.svg" alt="Pricut logo" />
+            <img src="https://res.cloudinary.com/da4ulrywk/image/upload/f_auto,q_auto/v1/Pricut/lumiuorrz405iqnwia9r" alt="Pricut logo" />
           </Link>
         ) : (
           <Link to="/" className="navbar_logo">
-            <img src="/assets/home/logo/pricut-logo-SF-claro-1.svg" alt="Pricut logo" />
+            <img src="https://res.cloudinary.com/da4ulrywk/image/upload/f_auto,q_auto/v1/Pricut/bweps1qii6c3qpslgzvs" alt="Pricut logo" />
           </Link>
         )
       ) : (
         <Link to="/" className="navbar_logo">
-          <img src="/assets/home/logo/pricut-logo-SF-claro-1.svg" alt="Pricut logo" />
+          <img src="https://res.cloudinary.com/da4ulrywk/image/upload/f_auto,q_auto/v1/Pricut/bweps1qii6c3qpslgzvs" alt="Pricut logo" />
         </Link>
       )}
 

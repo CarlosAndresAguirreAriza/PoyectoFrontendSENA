@@ -1,0 +1,8 @@
+.form-register-container {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+    border-radius: 15px;
+  }

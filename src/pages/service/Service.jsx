@@ -30,19 +30,26 @@ import useInfoStore from '../../context/infoStorage'
  */
 const Service = () => {
     const { services } = useInfoStore()
-    console.log(services)
+
     return (
         <>
             <Navbar />
             <BannerService />
             {
                 services.map((service, id) => (
-                    <SeccionSobreServicios key={service.base_info.code} service={service.base_info.name} url={service.base_info.code} about_text={service.descriptions.about_text} main_image={service.images.main_image} common_uses_text={service.descriptions.common_uses_text} id={id}/>
+                    <SeccionSobreServicios
+                    key={service.base_info.code}
+                    service={service.base_info.name}
+                    url={service.base_info.code}
+                    about_text={service.descriptions.about_text}
+                    main_image={service.images.main_image}
+                    common_uses_text={service.descriptions.common_uses_text}
+                    id={id}
+                    />
                 ))
             }
 
             <BannerComienzaProyecto />
-            
             <SectionArticulos />
             <Footer />
         </>
